@@ -18,35 +18,96 @@
 .ex-2-square:active {
     width: 100%;
 }
+/* terzo esercizio */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+/* quarto esercizio */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+.ex-4-square:hover {
+    opacity: 0;
+}
+/* quinto esercizio */
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: 2s;
 }
+.ex-5-square:hover {
+    transform: scale(2);
+}
+.ex-5-square:active {
+    transform: scale(.5);
+}
+/* sesto esercizio */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
-
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+/* settimo/ottavo esercizio */
+.ex-7-img, .ex-8-img {
+    transition: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(.5) sepia(.5);
+}
+.ex-8-img:hover {
+    filter: grayscale(.5) sepia(.5);
+    border-radius: 20px;
+}
+/* nono esercizio */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+.ex-9-img:hover {
+    filter: grayscale(.5) sepia(.5);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+/* decimo esercizio */
 .ex-10-icon {
     font-size: 60px;
+    animation: caricamento 1s linear infinite;
 }
+@keyframes caricamento {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover {
+    animation: caricamento-strano 2s linear;
+}
+@keyframes caricamento-strano {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
